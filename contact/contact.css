@@ -38,22 +38,26 @@ body a {
     font-size: clamp(15px, 3vw, 20px);
 }
 
-#FirstHeader .nav_socialLinks  #insta i:hover {
+#FirstHeader .nav_socialLinks #insta i:hover {
     transform: scale(1.2);
     color: #f22c95;
 }
+
 #FirstHeader .nav_socialLinks #fb i:hover {
     transform: scale(1.2);
     color: #1877F2;
 }
+
 #FirstHeader .nav_socialLinks #x i:hover {
     transform: scale(1.2);
     color: #000000;
 }
+
 #FirstHeader .nav_socialLinks #lkdn i:hover {
     transform: scale(1.2);
     color: #0077B5;
 }
+
 #FirstHeader .nav_socialLinks #yt i:hover {
     transform: scale(1.2);
     color: #FF0000;
@@ -185,7 +189,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     position: relative;
-    z-index:3;
+    z-index: 3;
     top: 450px;
     left: 10vw;
 }
@@ -193,7 +197,7 @@ nav {
 .hero-text h1 {
     font-size: clamp(2rem, 10vw, 6rem);
     color: #ffffff;
-    font-family:Courier New;
+    font-family: Courier New;
 
 }
 
@@ -298,9 +302,9 @@ nav {
     margin: 100px 0 40px 0;
     font-family: monospace;
     font-weight: 400;
-  }
-  
-  .contact_container {
+}
+
+.contact_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -309,46 +313,46 @@ nav {
     margin: 50px 120px;
     gap: 50px;
     border-bottom: 1px solid rgba(119, 119, 119, 0.374);
-  }
-  
-  .contact {
+}
+
+.contact {
     flex: 1 1 450px;
     min-width: 300px;
     max-width: 600px;
-  }
-  
-  .contact h2 {
+}
+
+.contact h2 {
     font-size: 30px;
     margin-bottom: 30px;
     color: #222;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-  }
-  
-  .contact h3 {
+}
+
+.contact h3 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 8px;
     color: #464646;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-  }
-  
-  .contact p {
+}
+
+.contact p {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-  }
-  
-  .contact p a {
+}
+
+.contact p a {
     color: inherit;
     text-decoration: none;
     font-weight: normal;
-  }
-  
-  .contact a.button {
+}
+
+.contact a.button {
     display: inline-block;
     margin-top: 25px;
     padding: 10px 25px;
@@ -358,46 +362,46 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     transition: all 0.3s ease;
-  }
-  
-  .contact a.button:hover {
+}
+
+.contact a.button:hover {
     color: white;
     background-color: #4a4a4a;
-  }
-  
-  .contact .map-container iframe {
+}
+
+.contact .map-container iframe {
     width: 100%;
     height: 350px;
     border: 1px solid rgba(185, 185, 185, 0.7);
-  }
-  
-  @media (max-width: 991px) {
-    .contact_container {
-      margin: 50px 60px;
-      gap: 30px;
-    }
-  }
+}
 
-  
-  @media (max-width: 480px) {
+@media (max-width: 991px) {
+    .contact_container {
+        margin: 50px 60px;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
     .contact h2 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     .contact h3 {
-      font-size: 18px;
+        font-size: 18px;
     }
-  
+
     .contact p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .contact a.button {
-      padding: 8px 20px;
-      font-size: 14px;
+        padding: 8px 20px;
+        font-size: 14px;
     }
-  }
-  
+}
+
 
 
 
@@ -408,7 +412,7 @@ nav {
     position: relative;
     width: 100%;
     height: 380px;
-    background-image: url('/images/contact.jpg');
+    background-image: url('../images/contact.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -481,6 +485,7 @@ nav {
     border: 2px solid #ddd;
     transition: border-color 0.3s;
 }
+
 #contacts textarea {
     width: 100%;
     margin: 10px 0;
