@@ -167,7 +167,7 @@ function deleteEmployee(id) {
   const token = localStorage.getItem("token");
   
   if (confirm("Are you sure you want to delete this employee?")) {
-    fetch(`http://localhost:5000/api/admin/employees/${id}`, {
+    fetch(`https://wasif-backend.onrender.com/api/admin/employees/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`

@@ -95,7 +95,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     submitBtn.textContent = "Sending...";
 
     try {
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("https://wasif-backend.onrender.com/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ fullName: name, email, phone, message }),
