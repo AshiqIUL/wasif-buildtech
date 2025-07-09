@@ -24,7 +24,7 @@ function fetchMessages(token) {
   const container = document.getElementById("messagesList");
   container.innerHTML = `<div class="text-center my-3"><div class="spinner-border text-primary"></div></div>`;
 
-  fetch("http://localhost:5000/api/admin/messages", {
+  fetch("https://wasif-backend.onrender.com/api/admin/messages", {
     headers: { Authorization: `Bearer ${token}` }
   })
     .then(res => res.json())
@@ -51,7 +51,7 @@ function fetchMessages(token) {
 function markMessageAsRead(id) {
   const token = localStorage.getItem("token");
 
-  fetch(`http://localhost:5000/api/admin/messages/${id}/mark-read`, {
+  fetch(`https://wasif-backend.onrender.com/api/admin/messages/${id}/mark-read`, {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${token}`
@@ -71,7 +71,7 @@ function markMessageAsRead(id) {
 
 // --- Employee Management ---
 function fetchEmployees(token) {
-  fetch("http://localhost:5000/api/admin/employees", {
+  fetch("https://wasif-backend.onrender.com/api/admin/employees", {
     headers: { Authorization: `Bearer ${token}` }
   })
     .then(res => res.json())
@@ -129,7 +129,7 @@ function createEmployee() {
     return showNotification("All fields are required", "danger");
   }
 
-  fetch("http://localhost:5000/api/admin/employees", {
+  fetch("https://wasif-backend.onrender.com/api/admin/employees", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -201,7 +201,7 @@ function saveEmployeeChanges(id) {
     salary: document.getElementById(`editSalary_${id}`).value
   };
 
-  fetch(`http://localhost:5000/api/admin/employees/${id}`, {
+  fetch(`https://wasif-backend.onrender.com/api/admin/employees/${id}`, {
     method: "PUT",
     body: JSON.stringify(updatedEmployee),
     headers: {
